@@ -1,0 +1,320 @@
+.navbar {
+  z-index: 10000;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0.4vw;
+  background: #4070f4;
+}
+
+.navbar-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0.4vw;
+  width: 80%;
+  background: #4070f4;
+  z-index: 10000;
+  width: 100%;
+  min-width: 400px;
+}
+
+.navbar-1 p {
+  font-size: 1.5vw;
+  line-height: 100%;
+  font-weight: bold;
+  color: black;
+}
+.main {
+  position: relative;
+  background-color: #52678B;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: avenir;
+}
+
+
+body {
+  margin: 0px;
+  font-family: avenir;
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  background-color: #52678B;
+}
+
+.logo {
+  font-size: 2vh;
+}
+
+.poza-header {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+
+.ichigo-background {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+.side-container {
+  position:absolute;
+  right: 0px;
+  background-color: white;
+  width: 25%;
+}
+
+.side {
+  background-color: #dde1ec;
+  font-size: 2vw;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.container {
+  width: 80%;
+  margin: 0px 10%;
+  position: relative;
+  background-color: white;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: #2e51a2;
+  padding: 10px 1vw;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown-button:hover {
+  background-color: #e1e7f5;
+  padding: 15% 1vw;
+  white-space: nowrap;
+  color: #2e51a2;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100000000;
+  width: 150px;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #e1e7f5;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  text-decoration: none;
+  padding: 5% 0px;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  background-color: #2e51a2;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  text-decoration: none;
+  color: white;
+  padding: 5% 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.meniu-navbar {
+  display: flex;
+  background-color: #2e51a2;
+  min-width: 400px;
+}
+
+.container-animeuri-top {
+  display: flex;
+  background-color: white;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.loc-anime {
+  color: grey;
+  min-width: 1.5vw;
+  font-size: 2vh;
+  padding-left: 1%;
+}
+
+.imagine-anime-container {
+  width: 50px;
+  height: 70px;
+}
+
+.imagine-anime {
+  width: 50px;
+  height: 70px;
+}
+
+.nume-anime {
+  font-size: 1vw;
+  color: #1c439b;
+  padding-left: 2%;
+  width: 100%;
+}
+
+
+.sub-text {
+  color: gray;
+  padding: 0px;
+  font-size: 0.8vw;
+  position: absolute;
+  bottom: 5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#itemsContainer {
+  height: 1vh;
+  margin-bottom: 2000px;
+}
+
+tr {
+border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.name {
+  font-weight: bold;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+}
+
+.rating {
+  font-weight: bold;
+  border-right: solid 1px #ddd;
+}
+
+.info {
+  font-style: italic;
+  max-height: 140px;
+  font-size: 1.5vh;
+  border-right: solid 1px #ddd;
+}
+
+.image-container {
+  max-width: 100px;
+  max-height: 140px;
+  border-left: solid 1px #ddd;
+}
+
+.image-container img {
+  width: 100%;
+  font-size: 10vh;
+  max-height: 140px;
+}
+
+.button-container {
+  border-right: solid 1px #ddd;
+}
+
+.button-container button {
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+#Actions {
+  display: flex;
+  float: right;
+  text-align: center;
+}
+
+.rank {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width:500px) {
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+}
+
+@media (max-width:800px) {
+  .ichigo-background {
+    height: 200px;
+    display: block;
+  }
+
+  .nume-anime p {
+    font-size: 1.5vw;
+    color: #1c439b;
+    min-width: 20.7px;
+    word-wrap: break-word;
+  }
+
+  .loc-anime {
+    width: 4vh;
+  }
+
+  .item img {
+    max-height: 10vh;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .info {
+    margin-top: 5px;
+    font-size: 1vh;
+    height: 0.45vh;
+    max-height: 140px;
+  }
+
+  .dropdown-button {
+    background-color: #2e51a2;
+    padding: 10px 2vw;
+    white-space: nowrap;
+    color: white;
+    position: relative;
+    font-size: 2vw;
+    border: none;
+    font-weight: bold;
+  }
+}

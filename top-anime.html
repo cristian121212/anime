@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Anime</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div>
+      <a href="despre-noi.html" style="font-size: 1vh;">
+        <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vh;">
+          <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+        </i>
+      </a>
+      <a href="index.html" style="font-size: 1vh;">
+        <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+          <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+        </i>
+      </a>
+    </div>
+  </nav>
+  <script src="bars-animation.js"></script>
+  <main class="main">
+    <div class="poza-header">
+      <img class="ichigo-background" src="poze/340-3401353_ichigo-kurosaki-titled-kurosaki-kun-bleach-ichigo-removebg-preview (1) (1).png">
+    </div>
+    <div class="container">
+      <div class="meniu-navbar">
+        <div class="dropdown">
+          <a href="index.html"><button class="dropdown-button">Home</button></a>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">Anime</button>
+          <div class="dropdown-content">
+            <a href="top-anime.html">Top Anime </a>
+            <a href="#">Reviews</a>
+            <a href="#">Recomandari</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-button">Manga</button>
+          <div class="dropdown-content">
+            <a href="#">Top Manga</a>
+            <a href="#">Reviews</a>
+            <a href="#">Recomandari</a>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <nav class="navbar-1">
+          <p>Top Anime</p>
+        </nav>
+      </div>
+      <table>
+          <thead>
+           <tr>
+             <th>Rank</th>
+             <th>Image</th>
+             <th>Name</th>
+             <th>Rating</th>
+             <th>Info</th>
+             <th id="Actions">Your rating</th>
+            </tr>
+         </thead>
+       <tbody id="itemsContainer"></tbody>
+      </table>
+      <script src="top.js"></script>
+    </div>
+  </main>
+</body>
+</html>
