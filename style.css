@@ -22,7 +22,7 @@
   background: #4070f4;
   z-index: 10000;
   width: 100%;
-  min-width: 400px;
+  min-width: 450px;
 }
 
 .navbar-1 p {
@@ -30,6 +30,7 @@
   line-height: 100%;
   font-weight: bold;
   color: black;
+  min-width: 450px;
 }
 .main {
   position: relative;
