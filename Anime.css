@@ -5,7 +5,7 @@ html {
 
 .navbar {
   z-index: 10000;
-  width: 100%;
+  width: 100vw;
   height: 60px;
   display: flex;
   align-items: center;
@@ -38,6 +38,7 @@ html {
 .main {
   position: relative;
   background-color: #52678B;
+  overflow: hidden;
 }
 
 *{
@@ -187,13 +188,17 @@ ul {
 
 .info {
   font-style: italic;
-  font-size: 1.4vh;
+  font-size: 1.6vh;
   width: 45vw;
 }
 
 .categorii p {
   display: flex;
   justify-content: center;
+}
+
+.block {
+  display: flex; justify-content: space-between; width: 100%;
 }
 
 
@@ -217,7 +222,7 @@ ul {
 @media (max-width:750px) {
   .info {
     margin-top: 5px;
-    font-size: 1vh;
+    font-size: 1.2vh;
     width: 40vw;
   }
 }
@@ -230,25 +235,28 @@ ul {
     box-sizing: border-box;
   }
   .container-flex {
-    min-width: 400px;
-    height: 37vh;
+    height: 50vh;
   }
   .categorii  {
-    width: 65vw;
+    width: 30vw;
     overflow: hidden;
+    float: none;
   }
   .info {
     margin-top: 5px;
     font-size: 1vh;
-    width: 36vw;
-  }
-
-  .categorii {
-    width: 100vw;
-    overflow: hidden;
+    width: 50vw;
   }
 
   #myForm p {
     font-size: 2.3vw;
+  }
+
+  .imagine-marime {
+    width: 20vw;
+  }
+
+  .block {
+    display: block;
   }
 }
