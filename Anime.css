@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 .navbar {
   z-index: 10000;
   width: 100%;
@@ -153,7 +157,7 @@ body {
   font-size: 2vw;
   float: right;
   right: 0px;
-  width: 50vw;
+  width: 40vw;
   background-color: lightblue;
 }
 
@@ -225,7 +229,7 @@ ul {
   }
   .container-flex {
     min-width: 400px;
-    height: 36vh;
+    height: 37vh;
   }
   .categorii  {
     width: 65vw;
@@ -234,7 +238,6 @@ ul {
     margin-top: 5px;
     font-size: 1vh;
     width: 36vw;
-    min-height: 194px;
   }
 
   .categorii {
@@ -242,6 +245,6 @@ ul {
   }
 
   #myForm p {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
   }
 }
