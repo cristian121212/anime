@@ -235,6 +235,7 @@ ul {
   }
   .categorii  {
     width: 65vw;
+    overflow: hidden;
   }
   .info {
     margin-top: 5px;
@@ -244,6 +245,7 @@ ul {
 
   .categorii {
     width: 100vw;
+    overflow: hidden;
   }
 
   #myForm p {
