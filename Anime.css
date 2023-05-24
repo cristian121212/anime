@@ -60,7 +60,7 @@ body {
 }
 
 .logo {
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
 
@@ -69,7 +69,6 @@ body {
   margin: 0px 0%;
   position: relative;
   background-color: white;
-  margin-bottom: 3%;
   display: inline-block;
 }
 
@@ -134,7 +133,7 @@ body {
 
 .container-flex {
   display: flex;
-  height: 36vh;
+  height: 39vh;
   width: 100%;
   background-color: white;
 }
@@ -159,15 +158,12 @@ body {
   font-size: 2vw;
   float: right;
   right: 0px;
-  width: 38vw;
+  width: 50vw;
   background-color: lightblue;
   overflow: hidden;
 }
 
 .grupa-categorii {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  flex-direction: row;
   white-space: nowrap;
   column-gap: 0px;
   box-sizing: border-box;
@@ -195,10 +191,19 @@ ul {
 .categorii p {
   display: flex;
   justify-content: center;
+  margin-bottom: 2%;
+}
+
+.flex {
+  display: flex;
 }
 
 .block {
   display: flex; justify-content: space-between; width: 100%;
+}
+
+#average {
+  float: left;
 }
 
 
@@ -209,13 +214,16 @@ ul {
 
   li {
     list-style-type: none; 
-    font-size: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .categorii p {
     display: inline-block;
+  }
+
+  .container-flex {
+    height: 45vh;
   }
 }
 
@@ -225,27 +233,39 @@ ul {
     font-size: 1.2vh;
     width: 40vw;
   }
+
+  .flex p,
+  .flex span,
+  .flex b {
+    font-size: 3vh;
+  }
 }
 
 
-@media (max-width:500px) {
+@media (max-width:600px) {
   .grupa-categorii {
     white-space: nowrap;
     column-gap: 0px;
     box-sizing: border-box;
   }
   .container-flex {
-    height: 50vh;
+    height: 48.5vh;
+    min-width: 400px;
   }
   .categorii  {
-    width: 30vw;
+    width: 70vw;
     overflow: hidden;
     float: none;
+    margin-top: 2%;
   }
   .info {
     margin-top: 5px;
     font-size: 1vh;
-    width: 50vw;
+    width: 70vw;
+    margin-right: 5%;
+  }
+  #myForm  {
+    margin-top: 2%;
   }
 
   #myForm p {
@@ -253,10 +273,21 @@ ul {
   }
 
   .imagine-marime {
-    width: 20vw;
+    width: 25vw;
+    height: 91.5%;
   }
 
   .block {
     display: block;
   }
+
+  .categorii p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .grupa-categorii p  {
+    line-height: 10px;
+  }
+
 }
