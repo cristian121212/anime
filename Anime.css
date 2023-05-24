@@ -1,5 +1,6 @@
 html {
   overflow: hidden;
+  width: 100%;
 }
 
 .navbar {
@@ -157,8 +158,9 @@ body {
   font-size: 2vw;
   float: right;
   right: 0px;
-  width: 40vw;
+  width: 38vw;
   background-color: lightblue;
+  overflow: hidden;
 }
 
 .grupa-categorii {
