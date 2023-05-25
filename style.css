@@ -333,4 +333,8 @@ th, td {
     margin: 0px;
     width: 100%;
   }
+
+  .image-container img {
+    height: 14vh;
+  }
 }
