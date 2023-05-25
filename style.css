@@ -9,7 +9,6 @@
   color: #fff;
   padding: 0.4vw;
   background: #4070f4;
-  min-width: 450px;
 }
 
 .navbar-1 {
@@ -228,8 +227,7 @@ tr {
 }
 
 th, td {
-  padding: 8px;
-  text-align: left;
+  padding: 5px;
 }
 
 .name {
@@ -311,8 +309,6 @@ th, td {
   .info {
     margin-top: 5px;
     font-size: 1vh;
-    height: 0.45vh;
-    max-height: 140px;
   }
 
   .dropdown-button {
