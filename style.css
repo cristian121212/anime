@@ -7,7 +7,7 @@
   position: relative;
   justify-content: space-between;
   color: #fff;
-  padding: 0.4vw;
+  padding: 0px 0.4vw;
   background: #4070f4;
 }
 
@@ -30,6 +30,19 @@
   color: black;
   min-width: 450px;
   overflow: hidden;
+}
+.navbar-button {
+  color: #24243e;
+  height: 100%; 
+  display: flex;
+}
+
+.navbar-button:hover{
+  color: red;
+  background-color: white;
+  height: 100%; 
+  padding: 10px 0px;
+  border-radius: 20px;
 }
 .main {
   position: relative;
@@ -325,6 +338,12 @@ th, td {
   .container {
     margin: 0px;
     width: 100%;
+  }
+  .navbar-button:hover{
+    color: red;
+    background-color: white;
+    height: 100%; 
+    padding: 24px 0px;
   }
 }
 
