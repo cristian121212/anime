@@ -1,127 +1,371 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
-  <title>Anime</title>
-  <style>
-  </style>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">
-      My Anime
-    </div>
-    <div style="display: flex;">
-      <div class="navbar-button">
-        <a href="despre-noi.html" style="font-size: 1vh;">
-          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vw;">
-            <span style="color: #24243e;height: 100%;font-size: 2vw;">Despre noi</span>
-          </i>
-        </a>
-      </div>
-      <div class="navbar-button">
-        <a href="index.html" style="font-size: 1vh;">
-          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vw;">
-            <span style="color: #24243e;height: 100%; font-size: 2vw;">Home</span>
-          </i>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <main class="main">
-    <div class="poza-header">
-      <img class="ichigo-background" src="poze/547297.jpg">
-    </div>
-    <div class="container">
-      <div class="meniu-navbar">
-        <div class="dropdown">
-          <a href="index.html"><button class="dropdown-button">Home</button></a>
-        </div>
-        <div class="dropdown">
-          <button class="dropdown-button">Anime</button>
-          <div class="dropdown-content">
-            <a href="top-anime.html">Top Anime </a>
-            <a href="#">Reviews</a>
-            <a href="#">Recomandari</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropdown-button">Manga</button>
-          <div class="dropdown-content">
-            <a href="#">Top Manga</a>
-            <a href="#">Reviews</a>
-            <a href="#">Recomandari</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <a href="despre-noi.html"><button class="dropdown-button">Despre-noi</button></a>
-        </div>
-      </div>
-      <div style="display: flex; justify-content: center;">
-        <nav class="navbar-1">
-          <p>Bine ai venit pe My Anime!</p>
-        </nav>
-      </div>
-        <div class="side-container">
-        <div id="Top anime" class="side">
-          Recomandari
-        </div>
-        <div class="container-animeuri-top">
-          <div class="loc-anime">1</div>
-          <div class="imagine-anime-container">
-            <img class="imagine-anime" src="poze/Bleach-icon.webp">
-          </div>
-          <div class="nume-anime">
-            <a href="Bleach.html" style="text-decoration: none; cursor: pointer;"><p>Bleach</p></a>
-            <p class="sub-text">Tv, 366 eps, score 7.91</p>
-          </div>
-        </div>
-        <div class="container-animeuri-top">
-          <div class="loc-anime">2</div>
-          <div class="imagine-anime-container">
-            <img class="imagine-anime" src="poze/Code Geass.webp">
-          </div>
-          <div class="nume-anime">
-            <a href="Code Geass.html" style="text-decoration: none; cursor: pointer;"><p>Code Geass: Lelouch of the Rebellion</p></a>
-            <p class="sub-text">Tv, 50 eps, 2 sezoane, score 8.7</p>
-          </div>
-        </div>
-        <div class="container-animeuri-top">
-          <div class="loc-anime">3</div>
-          <div class="imagine-anime-container">
-            <img class="imagine-anime" src="poze/Yuu☆Yuu☆Hakusho.webp">
-          </div>
-          <div class="nume-anime">
-            <a href="Yuu Yuu hakusho.html" style="text-decoration: none; cursor: pointer;"><p>Yuu Yuu Hakusho</p></a>
-            <p class="sub-text">Tv, 112 eps, score 8.46</p>
-          </div>
-        </div>
-        <div class="container-animeuri-top">
-          <div class="loc-anime">4</div>
-          <div class="imagine-anime-container">
-            <img class="imagine-anime" src="poze/Classroom of the Elite.webp">
-          </div>
-          <div class="nume-anime">
-            <a href="Classroom of the Elite.html" style="text-decoration: none; cursor: pointer;"><p>Classroom of the Elite</p></a>
-            <p class="sub-text">Tv, 25 eps, 2 sezoane, score 7.86</p>
-          </div>
-        </div>
-        <div class="container-animeuri-top">
-          <div class="loc-anime">5</div>
-          <div class="imagine-anime-container">
-            <img class="imagine-anime" src="poze/Chainwsaw Man.jpg">
-          </div>
-          <div class="nume-anime">
-            <a href="Chainsaw Man.html" style="text-decoration: none; cursor: pointer;"><p>Chainsaw Man</p></a>
-            <p class="sub-text">Tv, 12 eps, score 8.6</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
-</html>
+.navbar {
+  z-index: 10000;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0px 0.4vw;
+  background: #4070f4;
+}
+
+.navbar-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0.4vw;
+  width: 80%;
+  background: #4070f4;
+  z-index: 10000;
+  width: 100%;
+}
+
+.navbar-1 p {
+  font-size: 1.2vw;
+  line-height: 100%;
+  font-weight: bold;
+  color: black;
+  min-width: 450px;
+  overflow: hidden;
+}
+.navbar-button {
+  color: #24243e;
+  height: 100%; 
+  display: flex;
+}
+
+.navbar-button:hover{
+  color: red;
+  background-color: white;
+  height: 100%; 
+  padding: 10px 0px;
+  border-radius: 20px;
+}
+.main {
+  position: relative;
+  background-color: #52678B;
+  overflow: hidden;
+  padding-bottom: 2%;
+}
+
+.main-1 {
+  position: relative;
+  background-color: #52678B;
+  overflow: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: avenir;
+}
+
+
+body {
+  margin: 0px;
+  font-family: avenir;
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  background-color: #52678B;
+}
+
+.logo {
+  font-size: 2vh;
+}
+
+.poza-header {
+  width: 100vw;
+  position: relative;
+  display: block;
+}
+
+.ichigo-background {
+  width: 100%;
+  height: 400px;
+  min-width: 450px;
+  display: block;
+  overflow: hidden;
+}
+
+.side-container {
+  float: right;
+  right: 0px;
+  background-color: white;
+  width: 25%;
+  display: inline-block;
+}
+
+.side {
+  background-color: #dde1ec;
+  font-size: 2vw;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.container {
+  margin: 0px 20%;
+  position: relative;
+  background-color: white;
+  margin-bottom: 2%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #2e51a2;
+  padding: 10px 1vw;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown-button:hover {
+  background-color: #e1e7f5;
+  padding: 10px 1vw;
+  white-space: nowrap;
+  color: #2e51a2;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100000000;
+  width: 10vw;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #e1e7f5;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8vw;
+  text-decoration: none;
+  padding: 5% 5px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  background-color: #2e51a2;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: white;
+  padding: 5% 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.meniu-navbar {
+  display: flex;
+  background-color: #2e51a2;
+}
+
+.container-animeuri-top {
+  display: flex;
+  background-color: white;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.loc-anime {
+  color: grey;
+  min-width: 1.5vw;
+  font-size: 2vh;
+  padding-left: 1%;
+}
+
+.imagine-anime-container {
+  width: 50px;
+  height: 70px;
+}
+
+.imagine-anime {
+  width: 50px;
+  height: 70px;
+}
+
+.nume-anime {
+  font-size: 1vw;
+  color: #1c439b;
+  padding-left: 2%;
+  width: 100%;
+}
+
+
+.sub-text {
+  color: gray;
+  padding: 0px;
+  font-size: 0.8vw;
+  position: absolute;
+  bottom: 5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.name {
+  font-weight: bold;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+}
+
+.rating {
+  font-weight: bold;
+  border-right: solid 1px #ddd;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+.info {
+  font-style: italic;
+  max-height: 140px;
+  font-size: 1.5vh;
+  border-right: solid 1px #ddd;
+}
+
+.image-container {
+  border-left: solid 1px #ddd;
+  width: 120px;
+}
+
+.image-container img {
+  width: 100%;
+  font-size: 10vh;
+  max-height: 180px;
+}
+
+.button-container {
+  border-right: solid 1px #ddd;
+  text-align: center;
+  width: 130px;
+}
+
+.button-container button {
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+#Actions {
+  display: flex;
+  float: right;
+  text-align: center;
+}
+
+.rank {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+.average-container{
+  background-color: red;
+  z-index: 10000000;
+}
+
+@media (max-width:800px) {
+  .ichigo-background {
+    height: 200px;
+    display: block;
+    width: 100vw;
+  }
+
+  .nume-anime p {
+    font-size: 1.5vw;
+    color: #1c439b;
+    min-width: 20.7px;
+    word-wrap: break-word;
+  }
+
+  .loc-anime {
+    width: 4vh;
+  }
+
+  .item img {
+    max-height: 10vh;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .info {
+    margin-top: 5px;
+    font-size: 1vh;
+  }
+
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  .navbar-button:hover{
+    color: red;
+    background-color: white;
+    height: 100%; 
+    padding: 24px 0px;
+  }
+
+  .rating {
+    font-size: 2.1vh;
+  }
+
+  .button-container {
+    border-right: solid 1px #ddd;
+    text-align: center;
+    width: 100px;
+  }
+}
+
+@media (max-width:500px) {
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .image-container {
+    padding: 0px;
+  }
+
+  .rating {
+    font-size: 2.1vh;
+  }
+  .button-container {
+    border-right: solid 1px #ddd;
+    text-align: center;
+    width: 80px;
+  }
+}
