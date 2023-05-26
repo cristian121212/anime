@@ -464,3 +464,16 @@ li button {
     height: 70vh;
   }
 }
+
+@media (max-height:800px) {
+  #reviewInput {
+    width: 60%;
+    min-height: 10vh;
+    display: block;
+    font-size: 2vw;
+  }
+
+  .container-flex {
+    height: 60vh;
+  }
+}
