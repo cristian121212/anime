@@ -253,7 +253,7 @@ li button {
 
 #savedReviews {
   cursor: pointer;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }
 
 @media (max-width:1000px) {
@@ -470,10 +470,16 @@ li button {
     width: 60%;
     min-height: 10vh;
     display: block;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .container-flex {
     height: 60vh;
   }
+
+  #savedReviews {
+    cursor: pointer;
+    font-size: 3.7vw;
+  }
+
 }
