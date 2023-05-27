@@ -510,3 +510,13 @@ th, td {
     display: none;
   }
 }
+
+@media (max-height:750px) {
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    display: none;
+  }
+}
