@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="display.js"></script>
+  <title>Anime</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div style="display: flex;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vh;">
+            <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+            <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main-1">
+    <div class="poza-header">
+      <img class="ichigo-background" src="poze/547297.jpg">
+    </div>
+    <div style="display: flex; position: relative;">
+      <div class="left-side">
+        <a href="https://www.mangaread.org/manga/the-beginning-after-the-end/" target="_blank">
+          <img src="poze/meniu-sidebar-photo.jpg">
+        </a>
+      </div>
+      <div class="container">
+        <div class="meniu-navbar">
+          <div class="dropdown">
+            <a href="index.html"><button class="dropdown-button">Home</button></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Anime</button>
+            <div class="dropdown-content">
+              <a href="top-anime.html">Top Anime </a>
+              <a href="#">Reviews</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Manga</button>
+            <div class="dropdown-content">
+              <a href="#">Top Manga</a>
+              <a href="#">Reviews</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="despre-noi.html"><button class="dropdown-button">Despre-noi</button></a>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <nav class="navbar-1">
+            <p>Top Anime</p>
+          </nav>
+        </div>
+        <table>
+            <thead>
+             <tr>
+               <th>Rank</th>
+               <th>Image</th>
+               <th>Name</th>
+               <th>Rating</th>
+               <th>Grade</th>
+              </tr>
+           </thead>
+         <tbody id="itemsContainer"></tbody>
+        </table>
+        <script src="top.js"></script>
+      </div>
+      <div class="right-side">
+        <a href="https://www.mangaread.org/manga/solo-leveling-manhwa/" target="_blank">
+          <img src="poze/meniu-sidebar-photo-right.jpg">
+        </a>
+      </div>
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.left-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.right-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    </div>
+  </main>
+</body>
+</html>
