@@ -511,7 +511,7 @@ th, td {
   }
 }
 
-@media (max-height:750px) {
+@media (max-height:650px) {
   .left-side {
     display: none;
   }
