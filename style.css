@@ -448,4 +448,23 @@ th, td {
   .navbar-1 p {
     font-size: 2vw;
   }
+  
+    .name span {
+    color: gray;
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.2vh;
+  }
+
+  .name {
+    font-weight: bold;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    position: relative;
+    display: flex;
+    height: 20vh;
+    font-size: 2vh;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
 }
