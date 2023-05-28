@@ -1,77 +1,600 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="Anime.css" />
-  <title>Tokyo Ghoul</title>
-  <script src="display.js"></script>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="logo">
-      My Anime
-    </div>
-    <div style="display: flex;">
-      <div class="navbar-button">
-        <a href="despre-noi.html" style="font-size: 1vh;">
-          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vw;">
-            <span style="color: #24243e;height: 100%;font-size: 2vw;">Despre noi</span>
-          </i>
-        </a>
-      </div>
-      <div class="navbar-button">
-        <a href="index.html" style="font-size: 1vh;">
-          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vw;">
-            <span style="color: #24243e;height: 100%; font-size: 2vw;">Home</span>
-          </i>
-        </a>
-      </div>
-    </div>
-  </nav>
-  <main class="main">
-    <div class="container">
-      <div class="container-flex">
-        <div class="poza-container">
-          <img class="imagine-marime" src="poze/Tokyo Ghoul.jpg">
-        </div>
-        <div class="block">
-          <div>
-            <div class="text">
-              <h1>Tokyo Ghoul</h1>
-            </div>
-            <div class="info">A sinister threat is invading Tokyo: flesh-eating "ghouls" who appear identical to humans and blend into their population. Reserved college student Ken Kaneki buries his nose in books and avoids the news of the growing crisis. However, the appearance of an attractive woman named Rize Kamishiro shatters his solitude when she forwardly asks him on a date. While walking Rize home, Kaneki discovers she isn't as kind as she first appeared, and she has led him on with sinister intent. After a tragic struggle, he later awakens in a hospital to learn his life was saved by transplanting the now deceased Rize's organs into his own body. Kaneki's body begins to change in horrifying ways, and he transforms into a human-ghoul hybrid. As he embarks on his new dreadful journey, Kaneki clings to his humanity in the evolving bloody conflict between society's new monsters and the government agents who hunt them.</div>
-            <form id="myForm">
-              <p style="white-space: nowrap;font-weight: bold;">This is the following rating order:</p>
-              <p style="color: gray;white-space: nowrap;">MC, Side caracters, Actiune, Plot</p>
-              <input type="number" id="input" step="any" autocomplete="off" placeholder="Nota" min="0" max="10">
-              <button type="submit">Save</button>
-            </form>
-            <script src="save-data/save-data-16.js"></script>
-          </div>
-          <div class="categorii">
-            <p><u style="font-size: 4vw;">Categorii</u></p>
-            <div class="grupa-categorii">
-              <div style="display: flex;">
-                <p style=" display: flex; justify-content: center;align-items: center;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p>
-                <ul id="savedInputs"></ul>
-              </div>
-              <div>
-                <div id="average"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="reviews" id="reviews">
-      <h2>Review</h2>
-      <textarea id="reviewInput" placeholder="Enter your review"></textarea>
-      <button id="saveReviewButton">Save Review</button>
-      <div id="savedReviews"></div>
-    </div>
-  </main>
-</body>
-</html>
+.navbar {
+  z-index: 10000;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0px 0.4vw;
+  background: #4070f4;
+}
+
+.navbar-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0.4vw;
+  width: 80%;
+  background: #4070f4;
+  z-index: 10000;
+  width: 100%;
+}
+
+.navbar-1 p {
+  font-size: 1.2vw;
+  line-height: 100%;
+  font-weight: bold;
+  color: black;
+  min-width: 450px;
+  overflow: hidden;
+}
+.navbar-button {
+  color: #24243e;
+  height: 5vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-button:hover{
+  background-color: white;
+  height: 100%; 
+  height: 6.5vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  position: relative;
+  background-color:	#778899;
+  overflow: hidden;
+  padding-bottom: 2%;
+  height: 200vh;
+}
+
+.main-1 {
+  position: relative;
+  background-color: #778899;
+  overflow: hidden;
+}
+
+.main-2 {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: avenir;
+}
+
+
+body {
+  margin: 0px;
+  font-family: avenir;
+  position: relative;
+  height: 100%;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 2vh;
+}
+
+.poza-header {
+  width: 100vw;
+  position: relative;
+  display: block;
+}
+
+.ichigo-background {
+  width: 100%;
+  height: 400px;
+  min-width: 450px;
+  display: block;
+  overflow: hidden;
+}
+
+.side-container {
+  float: right;
+  right: 0px;
+  background-color: white;
+  width: 30%;
+}
+
+.side {
+  background-color: #dde1ec;
+  font-size: 2vw;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.left-side {
+  width: 15vw;
+  position: absolute;
+  height: 100%;
+  z-index: 1000000;
+  left: 1%;
+}
+
+.left-side img {
+  width: 100%;
+  height: 80vh;
+}
+
+.right-side {
+  width: 15vw;
+  position: absolute;
+  height: 100%;
+  right: 1%;
+  z-index: 10000000;
+}
+
+.right-side img {
+  width: 100%;
+  height: 80vh;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 2%;
+  width: 68%;
+  margin: 0px 17%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background-color: #2e51a2;
+  padding: 10px 1vw;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown-button:hover {
+  background-color: #e1e7f5;
+  padding: 10px 1vw;
+  white-space: nowrap;
+  color: #2e51a2;
+  position: relative;
+  font-size: 1vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100000000;
+  width: 10vw;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #e1e7f5;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8vw;
+  text-decoration: none;
+  padding: 5% 5px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  background-color: #2e51a2;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: white;
+  padding: 5% 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.meniu-navbar {
+  display: flex;
+  background-color: #2e51a2;
+}
+
+.container-animeuri-top {
+  display: flex;
+  background-color: white;
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.loc-anime {
+  color: grey;
+  min-width: 1.5vw;
+  font-size: 2vh;
+  padding-left: 1%;
+}
+
+.imagine-anime-container {
+  width: 50px;
+  height: 70px;
+}
+
+.imagine-anime {
+  width: 50px;
+  height: 70px;
+}
+
+.nume-anime {
+  font-size: 1vw;
+  color: #1c439b;
+  padding-left: 2%;
+  width: 100%;
+}
+
+
+.sub-text {
+  color: gray;
+  padding: 0px;
+  font-size: 0.8vw;
+  position: absolute;
+  bottom: 5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.name {
+  font-weight: bold;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  position: relative;
+  display: flex;
+  height: 170px;
+  font-size: 1.5vw;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+.rating {
+  font-weight: bold;
+  border-right: solid 1px #ddd;
+  text-align: center;
+  font-size: 2.5vh;
+}
+
+.info {
+  font-style: italic;
+  max-height: 140px;
+  font-size: 1.5vh;
+  border-right: solid 1px #ddd;
+}
+
+.image-container {
+  border-left: solid 1px #ddd;
+  width: 120px;
+}
+
+.image-container img {
+  width: 100%;
+  font-size: 10vh;
+  max-height: 153px;
+}
+
+.button-container {
+  border-right: solid 1px #ddd;
+  text-align: center;
+  width: 130px;
+}
+
+.button-container button {
+  padding: 5px 10px;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  font-size: 2vh;
+}
+
+#Actions {
+  display: flex;
+  float: right;
+  text-align: center;
+}
+
+.rank {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+.average-container{
+  background-color: red;
+  z-index: 10000000;
+}
+
+.name span {
+  color: gray;
+  position: absolute;
+  bottom: 2%;
+  font-size: 1vw;
+}
+
+.review {
+  font-weight: bold;
+  color: blue;
+  font-size: 2.2vw;
+}
+
+.no-reviews {
+  font-size: 3vw;
+}
+
+#allReviews span {
+  font-size: 1.5vw;
+}
+
+.search-container {
+  position: absolute;
+  right: 0px;
+}
+
+.search-input {
+  width: 20vw;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.suggestions-container {
+  position: relative;
+  position: absolute;
+  z-index: 100000000;
+  font-size: 1vw;
+  background-color: white;
+  width: 20vw;
+  border-bottom: solid 1px #778899;
+}
+
+li {
+  list-style-type: none;
+}
+
+.suggestions-container  li{
+  border-bottom: solid 1px #778899;
+  padding: 1.5% 0px;
+  padding-left: 2%;
+  cursor: pointer;
+}
+
+.suggestions {
+  position: absolute;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  width: 20vw;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #e9e9e9;
+}
+
+.error-message {
+  color: red;
+  position: absolute;
+  z-index: 1000000;
+  top: 70%;
+}
+
+@media (max-width:800px) {
+  .ichigo-background {
+    height: 200px;
+    display: block;
+    width: 100vw;
+  }
+
+  .nume-anime p {
+    font-size: 1.5vw;
+    color: #1c439b;
+    min-width: 20.7px;
+    word-wrap: break-word;
+  }
+
+  .loc-anime {
+    width: 4vh;
+  }
+
+  .item img {
+    max-height: 10vh;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .info {
+    margin-top: 5px;
+    font-size: 1vh;
+  }
+
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  .navbar-button:hover{
+    color: red;
+    background-color: white;
+    height: 100%; 
+    padding: 24px 0px;
+  }
+
+  .rating {
+    font-size: 2.1vh;
+  }
+
+  .button-container {
+    border-right: solid 1px #ddd;
+    text-align: center;
+    width: 100px;
+  }
+}
+
+@media (max-width:500px) {
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .image-container {
+    padding: 0px;
+  }
+
+  .rating {
+    font-size: 2.1vh;
+  }
+  .button-container {
+    border-right: solid 1px #ddd;
+    text-align: center;
+    width: 80px;
+  }
+}
+
+@media (max-height:1000px) and (max-width:800px)  {
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button {
+    background-color: #2e51a2;
+    padding: 10px 1vw;
+    white-space: nowrap;
+    color: white;
+    position: relative;
+    font-size: 2.5vw;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #e1e7f5;
+    padding: 10px 1vw;
+    white-space: nowrap;
+    color: #2e51a2;
+    position: relative;
+    font-size: 2.5vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 100000000;
+    width: 25vw;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    background-color: #e1e7f5;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vw;
+    text-decoration: none;
+    padding: 10% 5px;
+    border-bottom: 1px solid black;
+  }
+  
+  .dropdown-content a:hover {
+    display: block;
+    background-color: #2e51a2;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    text-decoration: none;
+    color: white;
+    padding: 10% 5px;
+  }
+
+  .navbar-1 p {
+    font-size: 2vw;
+  }
+
+  .name span {
+    color: gray;
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.2vh;
+  }
+
+  .name {
+    font-weight: bold;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    position: relative;
+    display: flex;
+    height: 20vh;
+    font-size: 2vh;
+    padding-left: 1%;
+    padding-top: 1%;
+  }
+}
+
+@media (max-width:1300px) {
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    display: none;
+  }
+}
+
+@media (max-height:650px) {
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    display: none;
+  }
+}
