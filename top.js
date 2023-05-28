@@ -1,7 +1,7 @@
 var items = [
   { name: "Bleach", rating: 7.91, imageUrl: "poze/Bleach-icon.webp", href: "Bleach.html" ,description:"<span>TV, 2 seasons, 378+ episodes</span>"},
   { name: "Code Geass: Lelouch of the Rebellion", rating: 8.70, imageUrl: "poze/Code Geass.webp", href: "Code Geass.html",description:"<span>TV, 2 seasons, 50 episodes</span>"},
-  { name: "Yu Yu Hakusho: Ghost Files", rating: 8.46, imageUrl: "poze/Yuu☆Yuu☆Hakusho.webp", href: "Yuu Yuu hakusho.html" ,description:"<span>TV, 1 season, 112 episodes</span>"},
+  { name: "Yuu Yuu Hakusho: Ghost Files", rating: 8.46, imageUrl: "poze/Yuu☆Yuu☆Hakusho.webp", href: "Yuu Yuu hakusho.html" ,description:"<span>TV, 1 season, 112 episodes</span>"},
   { name: "Classroom of the Elite", rating: 7.86, imageUrl: "poze/Classroom of the Elite.webp", href: "Classroom of the Elite.html" ,description:"<span>TV, 2 seasons, 25 episodes</span>"},
   { name: "Chainsaw Man", rating: 8.6, imageUrl: "poze/Chainwsaw Man.jpg", href: "Chainsaw Man.html",description:"<span>TV, 1 season, 12 episodes</span>" },
   { name: "Hunter x Hunter", rating: 9.04, imageUrl: "poze/Hunter x Hunter.jpg", href: "Hunter x Hunter.html" ,description:"<span>TV, 1 season, 148 episodes</span>"},
@@ -20,6 +20,9 @@ var items = [
   { name: "Fullmetal Alchemist: Brotherhood", rating: 9.10, imageUrl: "poze/Fullmetal Alchemist Brotherhood.jpg", href: "Fullmetal Alchemist Brotherhood.html",description:"<span>TV, 2 seasons, 115 episodes</span>"},
   { name: "Monster", rating: 8.87, imageUrl: "poze/Monster.jpg", href: "Monster.html",description:"<span>TV, 1 season, 74 episodes</span>"},
   { name: "Bleach Thousand Year Blood War", rating: 9.07, imageUrl: "poze/Bleach Thousand Year Blood War.jpg", href: "Bleach Thousand Year Blood War.html",description:"<span>TV, 4 season, 50 episodes</span>"},
+  { name: "Naruto", rating: 8.26, imageUrl: "poze/Naruto.jpg", href: "Naruto.html",description:"<span>TV, 2 seasons, 720 episodes</span>"},
+  { name: "Dragon Ball", rating: 7.96, imageUrl: "poze/Dragon Ball.jpg", href: "dragon-ball.html",description:"<span>TV, 9 seasons, 798 episodes</span>"},
+  { name: "One Piece", rating: 0, imageUrl: "poze/One Piece.jpg", href: "one-piece.html",description:"<span>TV, 1 season, 1063+ episodes</span>"},
 ];
 
 // Sort the items based on their ratings in descending order
