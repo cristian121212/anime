@@ -1,5 +1,5 @@
 const animeList = [
-  { title: "Bleach", page: "bleach.html" },
+  { title: "Bleach", page: "Bleach.html" },
   { title: "Fullmetal Alchemist: Brotherhood", page: "Fullmetal Alchemist Brotherhood.html" },
   { title: "Steins;Gate", page: "Steins;Gate.html" },
   { title: "Bleach Thousand Year Blood War", page: "Bleach Thousand Year Blood War.html" },
