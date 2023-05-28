@@ -20,7 +20,7 @@ const animeList = [
   { title: "Tokyo Ghoul", page: "Tokyo Ghoul.html" },
   { title: "Fairy Tail", page: "Fairy Tail.html" },
   { title: "Black Bullet", page: "Black Bullet.html" },
-  { title: "Naruto", page: "naruto.html" },
+  { title: "Naruto", page: "Naruto.html" },
   { title: "One Piece", page: "one-piece.html" },
   { title: "Dragon Ball", page: "dragon-ball.html" }
 ]; // lista de anime-uri și paginile corespunzătoare
