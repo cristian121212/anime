@@ -371,9 +371,9 @@ th, td {
 }
 
 .search-input {
-  width: 20vw;
-  padding: 10px;
-  font-size: 16px;
+  width: 25vw;
+  padding: 10px 1vw;
+  font-size: 1vw;
 }
 
 .suggestions-container {
@@ -382,8 +382,7 @@ th, td {
   z-index: 100000000;
   font-size: 1vw;
   background-color: white;
-  width: 20vw;
-  border-bottom: solid 1px #778899;
+  width: 25vw;
 }
 
 li {
@@ -401,8 +400,7 @@ li {
   position: absolute;
   background-color: #f1f1f1;
   border: 1px solid #ccc;
-  width: 20vw;
-  max-height: 200px;
+  width: 25vw;
   overflow-y: auto;
   list-style: none;
   padding: 0;
@@ -474,6 +472,33 @@ li {
     text-align: center;
     width: 100px;
   }
+
+  .search-input {
+    width: 40vw;
+    padding: 6px 1vw;
+    font-size: 1.2vh;
+  }
+  
+  .suggestions-container {
+    position: relative;
+    position: absolute;
+    z-index: 100000000;
+    font-size: 1vw;
+    background-color: white;
+    width: 40vw;
+  }
+  
+
+  .suggestions {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    width: 40vw;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+  }
 }
 
 @media (max-width:500px) {
@@ -504,18 +529,18 @@ li {
   
   .dropdown-button {
     background-color: #2e51a2;
-    padding: 10px 1vw;
+    padding: 6px 1vw;
     white-space: nowrap;
     color: white;
     position: relative;
-    font-size: 2.5vw;
+    font-size: 1.2vh;
     border: none;
     font-weight: bold;
   }
   
   .dropdown-button:hover {
     background-color: #e1e7f5;
-    padding: 10px 1vw;
+    padding: 6px 1vw;
     white-space: nowrap;
     color: #2e51a2;
     position: relative;
