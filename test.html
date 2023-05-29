@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .search-container {
+      position: relative;
+      width: 300px;
+    }
+    
+    #search-input {
+      width: 100%;
+    }
+    
+    #suggestions-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      width: 100%;
+      padding: 8px;
+      display: none;
+    }
+    
+    #suggestions-container ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #suggestions-container li {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Caută un anime...">
+    <div id="suggestions-container"></div>
+  </div>
+
+  <script>
+    const animeList = [
+      { title: "Bleach", page: "bleach.html" },
+      { title: "Fullmetal Alchemist: Brotherhood", page: "Fullmetal Alchemist Brotherhood.html" },
+      // Restul listei de anime-uri...
+    ];
+
+    const searchInput = document.getElementById('search-input');
+    const suggestionsContainer = document.getElementById('suggestions-container');
+    let isEnterPressed = false;
+
+    function showSuggestions() {
+      const userInput = searchInput.value.toLowerCase();
+      suggestionsContainer.innerHTML = '';
+
+      if (userInput === '') {
+        suggestionsContainer.style.display = 'none';
+        return;
+      }
+
+      const filteredSuggestions = animeList.filter((anime) => anime.title.toLowerCase().startsWith(userInput));
+
+      if (filteredSuggestions.length === 0 && isEnterPressed) {
+        redirectToErrorPage();
+      } else {
+        errorMessage.style.display = 'none';
+      }
+
+      const ul = document.createElement('ul');
+
+      filteredSuggestions.forEach((anime) => {
+        const li = document.createElement('li');
+        li.textContent = anime.title;
+        li.addEventListener('click', () => {
+          searchInput.value = anime.title;
+          suggestionsContainer.innerHTML = '';
+          redirectToPage(anime.page);
+        });
+        ul.appendChild(li);
+      });
+
+      suggestionsContainer.appendChild(ul);
+      suggestionsContainer.style.display = 'block';
+    }
+
+    function redirectToPage(page) {
+      window.location.href = page;
+    }
+
+    function redirectToErrorPage() {
+      // Tratarea cazului în care nu există sugestii valide
+    }
+
+    searchInput.addEventListener('keyup', function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        const userInput = searchInput.value.trim();
+        if (userInput !== '') {
+          isEnterPressed = true;
+          const matchingAnime = animeList.find((anime) => anime.title.toLowerCase() === userInput.toLowerCase());
+          if (matchingAnime) {
+            redirectToPage(matchingAnime.page);
+          } else {
+            redirectToErrorPage();
+          }
+        }
+      } else {
+        isEnterPressed = false;
+      }
+    });
+
+    searchInput.addEventListener('input', showSuggestions);
+  </script>
+</body>
+</html>

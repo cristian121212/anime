@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="display.js"></script>
+  <title>Anime</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div style="display: flex;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vh;">
+            <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+            <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main-1">
+    <div class="poza-header">
+      <img class="ichigo-background" src="poze/547297.jpg">
+    </div>
+    <div style="display: flex; position: relative;">
+      <div class="left-side">
+        <a href="https://www.mangaread.org/manga/the-beginning-after-the-end/" target="_blank">
+          <img src="poze/meniu-sidebar-photo.jpg">
+        </a>
+      </div>
+      <div class="container">
+        <div class="meniu-navbar">
+          <div class="dropdown">
+            <a href="index.html"><button class="dropdown-button">Home</button></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Anime</button>
+            <div class="dropdown-content">
+              <a href="top-anime.html">Top Anime </a>
+              <a href="Toate review-urile.html">Toate comentarile</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Manga</button>
+            <div class="dropdown-content">
+              <a href="#">Top Manga</a>
+              <a href="#">Reviews</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="despre-noi.html"><button class="dropdown-button">Despre-noi</button></a>
+          </div>
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Caută anime" autocomplete="off">
+            <div id="suggestions-container" class="suggestions-container"></div>
+            <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+          </div>
+          <script src="search-bar.js"></script>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <nav class="navbar-1">
+            <p>Top Anime</p>
+          </nav>
+        </div>
+        <div style="display: flex;">
+          <table>
+            <thead>
+             <tr>
+               <th>Rank</th>
+               <th>Image</th>
+               <th>Name</th>
+               <th>MAL Rating</th>
+               <th>Grade</th>
+              </tr>
+           </thead>
+           <tbody id="itemsContainer"></tbody>
+          </table>
+          <script src="top.js"></script>
+          <div style="width: 6vw;">
+              <div style="padding: 5px; font-weight: 700;background: white; width: 6vw;white-space: nowrap;border-bottom: solid 1px #ddd;height: 28.5px;">
+                <span style="font-size: 0.95vw;">Your rating</span>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage19">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-18.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage18">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-17.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage21">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-20.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage6">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-5.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage20">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-19.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage2">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-1.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage24">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-23.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage5">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-4.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage7">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-6.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage8">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-7.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage3">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-2.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage11">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-10.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage14">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-13.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage22">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-21.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage10">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-9.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage15">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-14.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage13">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-12.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage23">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-22.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage1">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage4">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-3.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage16">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-15.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage17">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-16.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage12">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-11.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage9">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/save-data-8.js"></script>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <a href="https://www.mangaread.org/manga/solo-leveling-manhwa/" target="_blank">
+          <img src="poze/meniu-sidebar-photo-right.jpg">
+        </a>
+      </div>
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.left-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.right-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    </div>
+  </main>
+</body>
+</html>

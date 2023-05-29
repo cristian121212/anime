@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Anime</title>
+  <style>
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div style="display: flex;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;padding-right: 15px;font-size: 2vh;">
+            <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+            <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="poza-header">
+      <img class="ichigo-background" src="poze/547297.jpg">
+    </div>
+    <div style="display: flex; position: relative;">
+      <div class="left-side">
+        <a href="https://www.mangaread.org/manga/the-beginning-after-the-end/" target="_blank">
+          <img src="poze/meniu-sidebar-photo.jpg">
+        </a>
+      </div>
+      <div class="container">
+        <div class="meniu-navbar">
+          <div class="dropdown">
+            <a href="index.html"><button class="dropdown-button">Home</button></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Anime</button>
+            <div class="dropdown-content">
+              <a href="top-anime.html">Top Anime </a>
+              <a href="Toate review-urile.html">Toate comentarile</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Manga</button>
+            <div class="dropdown-content">
+              <a href="#">Top Manga</a>
+              <a href="#">Reviews</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="despre-noi.html"><button class="dropdown-button">Despre-noi</button></a>
+          </div>
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Caută anime" autocomplete="off">
+            <div id="suggestions-container" class="suggestions-container"></div>
+            <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+          </div>
+          <script src="search-bar.js"></script>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <nav class="navbar-1">
+            <p>Bine ai venit pe My Anime!</p>
+          </nav>
+        </div>
+          <div class="side-container">
+          <div id="Top anime" class="side">
+            Recomandari
+          </div>
+          <div class="container-animeuri-top">
+            <div class="loc-anime">1</div>
+            <div class="imagine-anime-container">
+              <img class="imagine-anime" src="poze/Bleach-icon.webp">
+            </div>
+            <div class="nume-anime">
+              <a href="Bleach.html" style="text-decoration: none; cursor: pointer;"><p>Bleach</p></a>
+              <p class="sub-text">Tv, 366 eps, score 7.91</p>
+            </div>
+          </div>
+          <div class="container-animeuri-top">
+            <div class="loc-anime">2</div>
+            <div class="imagine-anime-container">
+              <img class="imagine-anime" src="poze/Code Geass.webp">
+            </div>
+            <div class="nume-anime">
+              <a href="Code Geass.html" style="text-decoration: none; cursor: pointer;"><p>Code Geass: Lelouch of the Rebellion</p></a>
+              <p class="sub-text">Tv, 50 eps, 2 sezoane, score 8.7</p>
+            </div>
+          </div>
+          <div class="container-animeuri-top">
+            <div class="loc-anime">3</div>
+            <div class="imagine-anime-container">
+              <img class="imagine-anime" src="poze/Yuu☆Yuu☆Hakusho.webp">
+            </div>
+            <div class="nume-anime">
+              <a href="Yuu Yuu hakusho.html" style="text-decoration: none; cursor: pointer;"><p>Yuu Yuu Hakusho</p></a>
+              <p class="sub-text">Tv, 112 eps, score 8.46</p>
+            </div>
+          </div>
+          <div class="container-animeuri-top">
+            <div class="loc-anime">4</div>
+            <div class="imagine-anime-container">
+              <img class="imagine-anime" src="poze/Classroom of the Elite.webp">
+            </div>
+            <div class="nume-anime">
+              <a href="Classroom of the Elite.html" style="text-decoration: none; cursor: pointer;"><p>Classroom of the Elite</p></a>
+              <p class="sub-text">Tv, 25 eps, 2 sezoane, score 7.86</p>
+            </div>
+          </div>
+          <div class="container-animeuri-top">
+            <div class="loc-anime">5</div>
+            <div class="imagine-anime-container">
+              <img class="imagine-anime" src="poze/Chainwsaw Man.jpg">
+            </div>
+            <div class="nume-anime">
+              <a href="Chainsaw Man.html" style="text-decoration: none; cursor: pointer;"><p>Chainsaw Man</p></a>
+              <p class="sub-text">Tv, 12 eps, score 8.6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <a href="https://www.mangaread.org/manga/solo-leveling-manhwa/" target="_blank">
+          <img src="poze/meniu-sidebar-photo-right.jpg">
+        </a>
+      </div>
+    </div>
+    <script>
+      window.addEventListener('scroll', function() {
+        var container = document.querySelector('.container');
+        var side = document.querySelector('.left-side');
+        var rect = container.getBoundingClientRect();
+
+        if (rect.top <= 0) {
+          side.classList.add('fixed');
+          side.style.top = 'px';
+        } else {
+          side.classList.remove('fixed');
+          side.style.top = '0';
+        }
+      });
+    </script>  
+  
+    <script>
+      window.addEventListener('scroll', function() {
+        var container = document.querySelector('.container');
+        var side = document.querySelector('.right-side');
+        var rect = container.getBoundingClientRect();
+
+        if (rect.top <= 0) {
+          side.classList.add('fixed');
+          side.style.top = 'px';
+        } else {
+          side.classList.remove('fixed');
+          side.style.top = '0';
+        }
+      });
+    </script>  
+  </main>
+</body>
+</html>
