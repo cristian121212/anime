@@ -104,9 +104,8 @@ body {
 
 .side-container {
   float: right;
-  right: 0px;
   background-color: white;
-  width: 30%;
+  width: 40%;
 }
 
 .side {
@@ -444,9 +443,9 @@ li {
   }
 
   .nume-anime p {
-    font-size: 1.2vw;
+    font-size: 2w;
     color: #1c439b;
-    min-width: 55px;
+    width: 22%;
   }
 
   .loc-anime {
