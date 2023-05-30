@@ -105,7 +105,7 @@ body {
 .side-container {
   float: right;
   background-color: white;
-  width: 40%;
+  width: 30%;
 }
 
 .side {
@@ -528,8 +528,11 @@ li {
     width: 20vw;
   }
 
-  th .rating {
-  }
+  .side-container {
+  float: right;
+  background-color: white;
+  width: 40%;
+}
 }
 
 @media (max-width:500px) {
