@@ -443,9 +443,9 @@ li {
   }
 
   .nume-anime p {
-    font-size: 2vw;
+    font-size: 1.3vw;
     color: #1c439b;
-    width: 22%;
+    width: 90%;
   }
 
   .loc-anime {
@@ -487,7 +487,8 @@ li {
   .search-input {
     width: 40vw;
     padding: 6px 1vw;
-    font-size: 1.2vh;
+    font-size: 2vh;
+    height: 35px;
   }
   
   .suggestions-container {
