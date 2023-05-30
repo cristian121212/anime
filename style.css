@@ -444,10 +444,9 @@ li {
   }
 
   .nume-anime p {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     color: #1c439b;
-    min-width: 20.7px;
-    word-wrap: break-word;
+    min-width: 55px;
   }
 
   .loc-anime {
