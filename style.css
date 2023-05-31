@@ -304,6 +304,7 @@ th, td {
   display: flex;
   justify-content: flex-end;
   height: 7vh;
+  color: rgb(85, 26, 139);
 }
 
 .rating {
