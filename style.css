@@ -124,7 +124,7 @@ body {
   position: absolute;
   height: 100%;
   z-index: 1000000;
-  left: 1%;
+  left: 0.5%;
 }
 
 .left-side img {
@@ -154,7 +154,7 @@ body {
   position: relative;
   margin-bottom: 2%;
   width: 68%;
-  margin-left: 16.5%;
+  margin-left: 16%;
   margin-right: 16%;
 }
 
