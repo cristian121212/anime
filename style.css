@@ -234,6 +234,7 @@ body {
 }
 
 .container-animeuri-top {
+  background-color: white;
   display: flex;
   position: relative;
   margin-bottom: 3%;
