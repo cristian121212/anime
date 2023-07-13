@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Anime.css" />
+  <title>Attack on Titan</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div style="display: flex;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;font-size: 2vh;">
+            <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+            <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="container">
+      <div class="container-flex">
+        <div class="poza-container">
+          <img class="imagine-marime" src="poze/Attack on titan.jpg">
+        </div>
+        <div class="block">
+          <div>
+            <div class="text">
+              <h1>Attack on Titan</h1>
+            </div>
+            <div class="info">Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called Titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal Titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations. After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Eren, his adopted sister Mikasa Ackerman, and his childhood friend Armin Arlert join the brutal war against the Titans and race to discover a way of defeating them before the last walls are breached.</div>
+            <form id="myForm">
+              <p style="white-space: nowrap;font-weight: bold;">This is the following rating order:</p>
+              <p style="color: gray;white-space: nowrap;">MC, Side caracters, Actiune, Plot</p>
+              <input type="number" id="input" step="any" autocomplete="off" placeholder="Nota" min="0" max="10">
+              <button type="submit">Save</button>
+            </form>
+            <script src="save-data/Attack on Titan.js"></script>
+          </div>
+          <div class="categorii">
+            <p><u style="font-size: 4vw;">Categorii</u></p>
+            <div class="grupa-categorii">
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                <ul id="savedInputs"></ul>
+              </div>
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;margin-right: 1%;"><b>Average:</b>
+                <div id="averagePage7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews" id="reviews">
+      <h2>Review</h2>
+      <textarea id="reviewInput" placeholder="Enter your review"></textarea>
+      <button id="saveReviewButton">Save Review</button>
+      <div id="savedReviews"></div>
+    </div>
+  </main>
+</body>
+</html>
