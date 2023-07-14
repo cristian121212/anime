@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Anime.css" />
+  <title>Vinland Saga</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="top-anime.html">Top Anime </a>
+        <a href="top-manga.html">Top Manga</a>
+      </div>
+    </div>
+    <div class="logo">
+      My Anime
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Caută anime" autocomplete="off">
+      <div id="suggestions-container" class="suggestions-container"></div>
+      <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+    </div>
+    <script src="search-bar.js"></script>
+    <div style="display: flex;position: absolute; right: 0px;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;font-size: 1.5vh;">
+            <span style="color: #24243e;height: 100%;font-size: 1.5vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:1.5vh;">
+            <span style="color: #24243e;height: 100%; font-size: 1.5vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="container">
+      <div class="container-flex">
+        <div class="poza-container">
+          <img class="imagine-marime" src="poze/Vinland Saga.jpg">
+        </div>
+        <div class="block">
+          <div>
+            <div class="text">
+              <h1>Vinland Saga</h1>
+            </div>
+            <div class="info">A sinister threat is invading Tokyo: flesh-eating "ghouls" who appear identical to humans and blend into their population. Reserved college student Ken Kaneki buries his nose in books and avoids the news of the growing crisis. However, the appearance of an attractive woman named Rize Kamishiro shatters his solitude when she forwardly asks him on a date. While walking Rize home, Kaneki discovers she isn't as kind as she first appeared, and she has led him on with sinister intent. After a tragic struggle, he later awakens in a hospital to learn his life was saved by transplanting the now deceased Rize's organs into his own body. Kaneki's body begins to change in horrifying ways, and he transforms into a human-ghoul hybrid. As he embarks on his new dreadful journey, Kaneki clings to his humanity in the evolving bloody conflict between society's new monsters and the government agents who hunt them.</div>
+            <form id="myForm">
+              <p style="white-space: nowrap;font-weight: bold;">This is the following rating order:</p>
+              <p style="color: gray;white-space: nowrap;">MC, Side caracters, Actiune, Plot</p>
+              <input type="number" id="input" step="any" autocomplete="off" placeholder="Nota" min="0" max="10">
+              <button type="submit">Save</button>
+            </form>
+            <script src="save-data/Vinland Saga.js"></script>
+          </div>
+          <div class="categorii">
+            <p><u style="font-size: 4vw;">Categorii</u></p>
+            <div class="grupa-categorii">
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                <ul id="savedInputs"></ul>
+              </div>
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;margin-right: 1%;"><b>Average:</b>
+                <div id="averagePage27"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews" id="reviews">
+      <h2>Review</h2>
+      <textarea id="reviewInput" placeholder="Enter your review"></textarea>
+      <button id="saveReviewButton">Save Review</button>
+      <div id="savedReviews"></div>
+    </div>
+  </main>
+</body>
+</html>

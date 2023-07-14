@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>Anime</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      My Anime
+    </div>
+    <div style="display: flex;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;font-size: 2vh;">
+            <span style="color: #24243e;height: 100%;font-size: 2vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:2vh;">
+            <span style="color: #24243e;height: 100%; font-size: 2vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main-1">
+    <div class="poza-header">
+      <img class="ichigo-background" src="poze/547297.jpg">
+    </div>
+    <div style="display: flex; position: relative;">
+      <div>
+        <button class="Back-to-top-buttton">
+          <img src="poze/up-black-arrow-md.png">
+        </button>
+        <script src="scroll-up-button.js"></script>
+      </div>
+      <div class="left-side">
+        <a href="TBATE.html">
+          <img src="poze/meniu-sidebar-photo.jpg">
+        </a>
+      </div>
+      <div class="container">
+        <div class="meniu-navbar">
+          <div class="dropdown">
+            <a href="index.html"><button class="dropdown-button">Home</button></a>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Anime</button>
+            <div class="dropdown-content">
+              <a href="top-anime.html">Top Anime </a>
+              <a href="Toate review-urile.html">Reviews anime</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropdown-button">Manga</button>
+            <div class="dropdown-content">
+              <a href="top-manga.html">Top Manga</a>
+              <a href="Toate review-uri manga.html">Reviews manga</a>
+              <a href="#">Recomandari</a>
+            </div>
+          </div>
+          <div class="dropdown" id="top">
+            <a href="despre-noi.html"><button class="dropdown-button">Despre-noi</button></a>
+          </div>
+          <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Caută anime" autocomplete="off">
+            <div id="suggestions-container" class="suggestions-container"></div>
+            <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+          </div>
+          <script src="search-bar.js"></script>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <nav class="navbar-1">
+            <p>Top Anime</p>
+          </nav>
+        </div>
+        <div class="container-animeuri-top">
+          <table>
+            <thead>
+             <tr>
+               <th>Rank</th>
+               <th>Image</th>
+               <th>Name</th>
+               <th style="white-space: nowrap;" class="rating">MAL Rating</th>
+               <th>Grade</th>
+              </tr>
+           </thead>
+           <tbody id="itemsContainer"></tbody>
+          </table>
+          <script src="top.js"></script>
+          <div class="tabel-dreapta">
+              <div class="your-rating">
+                Your rating
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage19">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Fullmetal Alchemist Brotherhood.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage18">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Steins;Gate.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage21">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Bleach Thousand-Year Blood War.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage6">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Hunter x Hunter.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage20">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Monster.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage27">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Vinland Saga.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage2">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Code Geass.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage24">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/One Piece.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage29">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Jujutsu Kaisen.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage5">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Chainsaw Man.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage7">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Attack on Titan.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage8">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Demon Slayer.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage3">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Yuu Yuu Hakusho.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage11">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/The Eminence in Shadow.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage14">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Psycho-Pass.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage22">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Naruto.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage30">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Heavenly Delusion.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage10">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Black Clover.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage15">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/No Game, No Life.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage13">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Kuroko's Basketball.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage23">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Dragon Ball.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage1">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Bleach.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage4">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Classroom of the Elite.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage16">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Akame ga Kill.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage17">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Tokyo Ghoul.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage12">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Fairy Tail.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage28">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Goblin Slayer.js"></script>
+              </div>
+              <div style="background-color: white;height: 171px;border-right: solid 1px #ddd;display: flex;justify-content: center;align-items: center;font-size: 2.5vh;font-weight: 700;border-bottom: solid 1px #ddd;">
+                <div style="display: flex;">
+                  <p style=" display: flex; justify-content: center;align-items: center; display: none;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                  <ul id="savedInputs" style="display: none;"></ul>
+                </div>
+                <div>
+                  <div id="averagePage9">N/A</div>
+                  <i class="fa fa-star custom-star" style="color: gold;display: flex;justify-content: center;margin-top: 15%;"></i>
+                </div>
+                <script src="save-data/Black Bullet.js"></script>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <a href="Solo leveling.html">
+          <img src="poze/meniu-sidebar-photo-right.jpg">
+        </a>
+      </div>
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.left-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    
+      <script>
+        window.addEventListener('scroll', function() {
+          var container = document.querySelector('.container');
+          var side = document.querySelector('.right-side');
+          var rect = container.getBoundingClientRect();
+  
+          if (rect.top <= 0) {
+            side.classList.add('fixed');
+            side.style.top = 'px';
+          } else {
+            side.classList.remove('fixed');
+            side.style.top = '0';
+          }
+        });
+      </script>  
+    </div>
+  </main>
+</body>
+</html>

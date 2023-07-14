@@ -1,0 +1,707 @@
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar {
+  z-index: 10000;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  color: #fff;
+  padding: 0px;
+  background: #4070f4;
+}
+
+.navbar-1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0.4vw;
+  width: 80%;
+  background: #4070f4;
+  z-index: 10000;
+  width: 100%;
+}
+
+.navbar-1 p {
+  line-height: 100%;
+  font-weight: bold;
+  color: black;
+  min-width: 450px;
+  overflow: hidden;
+}
+
+.navbar-button {
+  color: #24243e;
+  height: 5vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0.5vw;
+  white-space: nowrap;
+}
+
+.navbar-button a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-button:hover{
+  background-color: white;
+  height: 100%; 
+  height: 5vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-button:hover i{
+  padding-bottom: 3px;
+  border-bottom: 1px solid #24243e;
+}
+
+.navbar-button:hover #sign-up,
+.navbar-button:hover #log-in{
+  padding-bottom: 3px;
+  border-bottom: 1px solid #24243e;
+}
+
+.search-container {
+  position: absolute;
+  left:  200px;
+  top: 0px;
+
+}
+
+.search-input {
+  width: 30vw;
+  padding: 0px 0.5vw;
+  transition: all 0.3s ease;
+  height: 5vh;
+  font-size: 1.4vw;
+}
+
+.search-input:focus {
+  border-color: #aaa;
+  background-color: rgb(240, 240, 240);
+  box-shadow: inset 1px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.suggestions-container {
+  position: relative;
+  z-index: 100000000;
+  font-size: 1vw;
+  background-color: transparent;
+  width: 25vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+.suggestions-container  li{
+  border: solid 1px #778899;
+  padding: 1.5% 0px;
+  padding-left: 2%;
+  cursor: pointer;
+  background-color: white;
+  font-size: 1.7vw;
+  color: black;
+}
+
+.suggestions-container  li:hover{
+  background-color: rgb(247, 247, 247);
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+  transform: translateX(-7%);
+  transition: transform 0.3s ease;
+}
+
+.suggestions-container li:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  height: 100%;
+  background-color: #e0e0e0;
+  transform: translateX(7%);
+  transition: transform 0.3s ease;
+}
+
+
+.suggestions {
+  position: absolute;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  width: 25vw;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  position: absolute;
+  z-index: 1000000;
+  top: 70%;
+}
+
+.main {
+  position: relative;
+  background-color: #e5e5e5;;
+  overflow: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: avenir;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: avenir;
+  background-color: #E0EEFF;
+}
+
+.logo {
+  font-size: 1.4vh;
+  margin-left: 1%;
+  white-space: nowrap;
+  margin-right: 2%;
+}
+
+#allReviews p {
+  font-size: 40px;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0px 0%;
+  position: relative;
+  background-color: white;
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: #4070f4;
+  padding: 0px 0.5vw;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  font-size: 1.5vw;
+  border: none;
+  font-weight: bold;
+  height: 5vh;
+  min-width: 25px;
+}
+
+.dropdown-button i {
+  font-size: 30px;
+}
+
+.text h1 {
+  font-size: 3vh;
+}
+
+.dropdown-button:hover {
+  background-color: #e1e7f5;
+  white-space: nowrap;
+  color: #2e51a2;
+  position: relative;
+  font-size: 1.5vw;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 100000000;
+  width: 150px;
+}
+
+.dropdown-content a {
+  display: block;
+  background-color: #e1e7f5;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  text-decoration: none;
+  padding: 5% 0px;
+}
+
+.dropdown-content a:hover {
+  display: block;
+  background-color: #2e51a2;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 2vh;
+  text-decoration: none;
+  color: white;
+  padding: 5% 0px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container-flex {
+  display: flex;
+  width: 100%;
+  background-color: white;
+}
+
+.imagine-marime {
+  width: 22vh;
+  height: 80%;
+  margin-top: 10%;
+  margin-left: 5%;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.text {
+  margin-top: 1vh;
+  margin-left: 2%;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.categorii {
+  font-size: 2vw;
+  float: right;
+  right: 0px;
+  width: 48vw;
+  background-color: lightblue;
+  overflow: hidden;
+  border-left: solid black 1px;
+}
+
+.grupa-categorii {
+  white-space: nowrap;
+  column-gap: 0px;
+  box-sizing: border-box;
+  margin: 0px 5%;
+}
+
+li {
+  list-style-type: none; 
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding-left: 2%;
+}
+
+.info {
+  font-style: italic;
+  font-size: 2vh;
+  width: 45vw;
+  padding-left: 1%;
+}
+
+.categorii p {
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: flex; justify-content: space-between; width: 100%;
+}
+
+#average {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.categorii b {
+  font-size: 2vw;
+}
+
+#reviewInput {
+  width: 60%;
+  min-height: 20vh;
+  display: block;
+  font-size: 1vw;
+}
+
+.reviews {
+  padding: 1%;
+  border-top: solid 1.5px;
+  border-bottom: solid 1.5px;
+  background-color: #e0e0e0;
+}
+
+#saveReviewButton {
+  font-size: 2vh;
+  margin-top: 1%;
+}
+
+#myForm  {
+  margin: 2% 0px;
+}
+
+li button {
+  font-size: 1.2vw;
+  margin-left: 10px;
+}
+
+#savedReviews {
+  cursor: pointer;
+  font-size: 2vw;
+}
+
+
+@media (max-width:1000px) {
+  .grupa-categorii {
+    display: inline;
+  }
+
+  li {
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .categorii p {
+    display: inline-block;
+  }
+
+  #reviewInput {
+    width: 60%;
+    min-height: 20vh;
+    display: block;
+    font-size: 2.3vw;
+  }
+
+  .categorii {
+    padding-left: 1%;
+  }
+}
+
+@media (max-width:950px) {
+  .info {
+    margin-top: 5px;
+    font-size: 1.4vh;
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .flex p,
+  .flex span,
+  .flex b {
+    font-size: 3vh;
+  }
+
+  #reviewInput {
+    width: 60%;
+    min-height: 15vh;
+    display: block;
+    font-size: 2.3vw;
+  }
+  .block {
+    display: block;
+  }
+
+  .categorii  {
+    overflow: hidden;
+    float: left;
+    margin-top: 2%;
+    position: absolute;
+    bottom: 1%;
+    left: 1.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    width: 97%;
+    border-left: none;
+  }
+  
+  .container-flex {
+    height:65vh;
+  }
+
+  .imagine-marime {
+    height: 28vh;
+  }
+  .categorii p {
+    display: flex;
+    justify-content: center;
+    font-size: 1vw;
+  }
+
+  .categorii b {
+    font-size: 2vh;
+  }
+
+  li {
+    font-size: 2vh;
+  }
+  
+
+  li button {
+    font-size: 1.5vw;
+    margin-left: 10%;
+  }
+
+  #average {
+    font-size: 1.8vw;
+  }
+  
+  #averagePage1,
+  #averagePage2,
+  #averagePage3,
+  #averagePage4,
+  #averagePage5,
+  #averagePage6,
+  #averagePage7,
+  #averagePage8,
+  #averagePage9,
+  #averagePage10,
+  #averagePage11,
+  #averagePage12,
+  #averagePage13,
+  #averagePage14,
+  #averagePage15,
+  #averagePage16,
+  #averagePage17,
+  #averagePage18,
+  #averagePage19,
+  #averagePage20,
+  #averagePage21,
+  #averagePage22,
+  #averagePage23,
+  #averagePage24,
+  #averagePage25 {
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width:600px) {
+  .grupa-categorii {
+    white-space: nowrap;
+    column-gap: 0px;
+    box-sizing: border-box;
+  }
+  .container-flex {
+    height:57vh;
+  }
+  .categorii  {
+    overflow: hidden;
+    float: none;
+    margin-top: 2%;
+    position: absolute;
+    left: 1.5%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+  }
+  .info {
+    margin-top: 5px;
+    font-size: 1vh;
+    width: 70vw;
+    margin-right: 5%;
+  }
+  #myForm  {
+    margin-top: 2%;
+  }
+
+  #myForm p {
+    font-size: 2.3vw;
+  }
+
+  .imagine-marime {
+    width: 25vw;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .categorii p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categorii b {
+    font-size: 2.8vw;
+  }
+
+  #saveReviewButton {
+    font-size: 1.6vh;
+    margin-top: 1%;
+  }
+
+  #reviewInput {
+    width: 60%;
+    min-height: 15vh;
+    display: block;
+    font-size: 2vw;
+  }
+
+  li button {
+    font-size: 1.3vw;
+    margin-left: 10%;
+  }
+
+  #average {
+    font-size: 3.5vw;
+  }
+
+  li {
+    font-size: 1.3vh;
+  }
+
+}
+
+@media (max-width:500px) {
+  .categorii b {
+    font-size: 2.5vh;
+  }
+
+  li {
+    font-size: 2.5vh;
+  }
+  
+  .info {
+    font-size: 1.2vh;
+  }
+
+  li button {
+    font-size: 3vw;
+    margin-left: 10%;
+  }
+
+  #average {
+    font-size: 3.5vw;
+  }
+
+  .container-flex {
+    height: 70vh;
+  }
+}
+
+@media (max-height:800px) {
+  #reviewInput {
+    width: 60%;
+    min-height: 10vh;
+    display: block;
+    font-size: 3vw;
+  }
+
+  .container-flex {
+    height: 53vh;
+  }
+
+  #savedReviews {
+    cursor: pointer;
+    font-size: 3.7vw;
+  }
+
+
+  .info {
+    font-size: 1.1vh;
+  }
+
+}
+
+@media (max-height:1200px) and (max-width:830px)  {
+  .container-flex {
+    height: 57vh;
+  }
+
+  .imagine-marime {
+    height: 60%;
+    width: 30vw;
+  }
+
+  .info {
+    width: 65vw;
+  }
+}
+
+@media (min-width:800px) and (min-height:560px) {
+  .info {
+    font-size: 2.2vh;
+  }
+}
+
+@media (max-width:830px) {
+  .info {
+    margin-top: 5px;
+    font-size: 1.2vh;
+    width: 100%;
+    padding-right: 1%;
+    padding-left: 2%;
+  }
+
+  .container-flex {
+    height: 65vh;
+  }
+
+  .search-input {
+    width: 40vw;
+    padding: 0px 0.5vw;
+    transition: all 0.3s ease;
+    height: 5vh;
+    font-size: 1.5vh;
+  }
+
+  .search-container {
+    position: absolute;
+    left: 100px;
+  }
+
+  #allReviews p {
+    font-size: 2vh;
+  }
+
+  .logo {
+    margin-left: 2%;
+  }
+}
+
+@media (min-height:1200px) {
+  .info {
+    font-size: 1.5vh;
+  }
+}
+
+@media (max-width:350px) {
+  .info {
+    font-size: 0.9vh;
+  }
+}
