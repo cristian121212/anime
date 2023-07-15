@@ -435,7 +435,7 @@ td .rating {
   font-weight: bold;
   border-right: solid 1px #ddd;
   text-align: center;
-  font-size: 16px;
+  font-size: 3vh;
   width: 10vw;
 }
 
