@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Anime.css" />
+  <title>The Eminence in Shadow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropdown-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="top-anime.html">Top Anime </a>
+        <a href="top-manga.html">Top Manga</a>
+        <button onclick="show_settings()" id="custom-settings-button">Custom settings</button>
+        <script src="show-settings.js"></script>
+      </div>
+    </div>
+    <div class="logo">
+      My Anime
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-input" class="search-input" placeholder="Caută anime" autocomplete="off">
+      <div id="suggestions-container" class="suggestions-container"></div>
+      <p id="error-message" class="error-message" style="display: none;">Numele introdus este greșit. Vă rugăm să încercați din nou.</p>
+    </div>
+    <script src="search-bar.js"></script>
+    <div style="display: flex;position: absolute; right: 0px;">
+      <div class="navbar-button">
+        <a href="despre-noi.html" style="font-size: 1vh;">
+          <i class="fa fa-users" aria-hidden="true" style="color: #24243e; height: 100%;font-size: 1.5vh;">
+            <span style="color: #24243e;height: 100%;font-size: 1.5vh;">Despre noi</span>
+          </i>
+        </a>
+      </div>
+      <div class="navbar-button">
+        <a href="index.html" style="font-size: 1vh;">
+          <i class="fa fa-home" aria-hidden="true" style="color: #24243e; height: 100%;font-size:1.5vh;">
+            <span style="color: #24243e;height: 100%; font-size: 1.5vh;">Home</span>
+          </i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="container">
+      <div class="container-flex">
+        <div class="poza-container" id="dark-mode">
+          <img class="imagine-marime" src="poze/The Eminence in Shadow.jpg">
+        </div>
+        <div class="block" id="dark-mode">
+          <div>
+            <div class="text">
+              <h1>The Eminence in Shadow</h1>
+            </div>
+            <div class="info">For as long as he can remember, Minoru Kagenou has been fixated on becoming as strong as possible, which has led him to undertake all kinds of rigorous training. This wish, however, does not stem from a desire to be recognized by others; rather, Minoru does everything he can to blend in with the crowd. So, while pretending to be a completely average student during the day, he arms himself with a crowbar and ruthlessly thrashes local biker gangs at night. Yet when Minoru finds himself in a truck accident, his ambitions seemingly come to a sudden end. In his final moments, he laments his powerlessness—no matter how much he trained, there was nothing he could do to overcome his human limitations. But instead of dying, Minoru reawakens as Cid, the second child of the noble Kagenou family, in another world—one where magic is commonplace. With the power he so desired finally within his grasp, he dons the moniker "Shadow" and establishes Shadow Garden: a group whose sole purpose is to combat the enigmatic Cult of Diablos, an organization born from Cid's imagination. However, as Shadow Garden grows in both membership and influence, it becomes increasingly apparent that the Cult of Diablos is not as fictional as Cid had intended.</div>
+            <form id="myForm">
+              <p style="white-space: nowrap;font-weight: bold;">This is the following rating order:</p>
+              <p style="color: gray;white-space: nowrap;">MC, Side caracters, Actiune, Plot</p>
+              <input type="number" id="input" step="any" autocomplete="off" placeholder="Nota" min="0" max="10">
+              <button type="submit">Save</button>
+            </form>
+            <script src="save-data/The Eminence in Shadow.js"></script>
+          </div>
+          <div class="categorii" id="dark-mode-1">
+            <p><u style="font-size: 4vw;">Categorii</u></p>
+            <div class="grupa-categorii">
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;"><b>MC:<br>Side caracters:</br>Actiune/Suspans:<br>Plot:</p></b>
+                <ul id="savedInputs"></ul>
+              </div>
+              <div style="display: flex;">
+                <p style=" display: flex; justify-content: center;align-items: center;margin-right: 1%;"><b>Average:</b>
+                <div id="averagePage11"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="custom-settings">
+          <h1 id="title">Custom settings</h1>
+          <div style="display:flex;align-items: center;">
+            <button style="background-color: red;position: absolute;right: -10px;top: -10px; font-size: 20px;border-radius: 500px;width: 35px;display: flex;justify-content: center;align-items: center;cursor: pointer;height: 35px;padding: 0px;border: solid 1px black;" onclick="show_settings()" id="custom-settings-button">X</button>
+            <span>Switch betwen modes:</span>
+            <label class="ui-switch">
+              <input type="checkbox" id="toggle-switch">
+              <div class="slider">
+                <div class="circle"></div>
+              </div>
+            </label>
+            <script src="lightmode-darkmode.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews" id="reviews">
+      <h2>Review</h2>
+      <textarea id="reviewInput" placeholder="Enter your review"></textarea>
+      <button id="saveReviewButton">Save Review</button>
+      <div id="savedReviews"></div>
+    </div>
+  </main>
+</body>
+</html>
